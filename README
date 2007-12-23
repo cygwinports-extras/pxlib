@@ -1,0 +1,86 @@
+pxlib
+------------------------------------------
+pxlib is shared C library to read various Paradox files. Currently .DB
+files are best supported. pxlib provides a very simple api to read the
+header and the data records of Paradox files. I also provides functions
+to convert the data into the hosts data format (little or big endian).
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libgsf114-1.14.7-1
+  libiconv2-1.11-1
+  libintl8-0.15-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pxlib.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/pxlib/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pxlib-0.6.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pxlib-0.6.3-X.cygport all
+
+This will create:
+  /usr/src/libpx-devel-0.6.3-X.tar.bz2
+  /usr/src/libpx0-0.6.3-X.tar.bz2
+  /usr/src/pxlib-0.6.3-X-src.tar.bz2
+  /usr/src/pxlib-0.6.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(pxlib)
+  /usr/share/doc/pxlib-0.6.3/AUTHORS
+  /usr/share/doc/pxlib-0.6.3/COPYING
+  /usr/share/doc/pxlib-0.6.3/ChangeLog
+  /usr/share/doc/pxlib-0.6.3/INSTALL
+  /usr/share/doc/pxlib-0.6.3/NEWS
+  /usr/share/doc/pxlib-0.6.3/README
+
+(libpx0)
+  /usr/bin/cygpx-0.dll
+  /usr/share/locale/de/LC_MESSAGES/pxlib.mo
+  /usr/share/locale/es/LC_MESSAGES/pxlib.mo
+  /usr/share/locale/fr/LC_MESSAGES/pxlib.mo
+
+(libpx-devel)
+  /usr/include/pxlib/paradox-gsf.h
+  /usr/include/pxlib/paradox-mp.h
+  /usr/include/pxlib/paradox.h
+  /usr/include/pxlib/pxversion.h
+  /usr/lib/libpx.a
+  /usr/lib/libpx.dll.a
+  /usr/lib/libpx.la
+  /usr/lib/pkgconfig/pxlib.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.6.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
