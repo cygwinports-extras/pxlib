@@ -1,0 +1,11 @@
+--- origsrc/pxlib-0.6.3/pxlib.pc.in	2003-10-29 12:46:40.000000000 -0600
++++ src/pxlib-0.6.3/pxlib.pc.in	2009-04-28 10:50:34.779625000 -0500
+@@ -7,6 +7,6 @@ Name: libpx
+ Description: A library for reading Paradox files
+ Version: @VERSION@
+ Requires:
+-Libs: -L${libdir} -lpx @RECODE_LIBDIR@ @RECODE_LIBS@ @LIBICONV@
+-Cflags: 
++Libs: -L${libdir} -lpx @RECODE_LIBDIR@ @RECODE_LIBS@ @LTLIBICONV@
++Cflags: -I${includedir}
+ 

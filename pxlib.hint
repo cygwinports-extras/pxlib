@@ -1,6 +1,5 @@
 category: Database
-requires: libpx0 libpx-devel
-sdesc: "Paradox DB library (meta-package)"
+sdesc: "Paradox DB library (sources)"
 ldesc: "pxlib is shared C library to read various Paradox files. 
 Currently .DB files are best supported. pxlib provides a very simple api 
 to read the header and the data records of Paradox files. I also 

@@ -6,23 +6,23 @@ header and the data records of Paradox files. I also provides functions
 to convert the data into the hosts data format (little or big endian).
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libgsf114-1.14.7-1
-  libiconv2-1.11-1
-  libintl8-0.15-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libgsf1_114-1.14.12-1
+  libiconv2-1.12-10
+  libintl8-0.17-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -44,22 +44,18 @@ This will create:
   /usr/src/libpx-devel-0.6.3-X.tar.bz2
   /usr/src/libpx0-0.6.3-X.tar.bz2
   /usr/src/pxlib-0.6.3-X-src.tar.bz2
-  /usr/src/pxlib-0.6.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(pxlib)
-  /usr/share/doc/pxlib-0.6.3/AUTHORS
-  /usr/share/doc/pxlib-0.6.3/COPYING
-  /usr/share/doc/pxlib-0.6.3/ChangeLog
-  /usr/share/doc/pxlib-0.6.3/INSTALL
-  /usr/share/doc/pxlib-0.6.3/NEWS
-  /usr/share/doc/pxlib-0.6.3/README
-
 (libpx0)
   /usr/bin/cygpx-0.dll
+  /usr/share/doc/pxlib/AUTHORS
+  /usr/share/doc/pxlib/COPYING
+  /usr/share/doc/pxlib/ChangeLog
+  /usr/share/doc/pxlib/NEWS
+  /usr/share/doc/pxlib/README
   /usr/share/locale/de/LC_MESSAGES/pxlib.mo
   /usr/share/locale/es/LC_MESSAGES/pxlib.mo
   /usr/share/locale/fr/LC_MESSAGES/pxlib.mo
@@ -78,8 +74,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.6.3-1 -----
-Initial release for Cygwin.
+----- version 0.6.3-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

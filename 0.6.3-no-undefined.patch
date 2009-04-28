@@ -1,0 +1,11 @@
+--- origsrc/pxlib-0.6.3/src/Makefile.am	2007-09-11 09:40:33.000000000 -0500
++++ src/pxlib-0.6.3/src/Makefile.am	2009-04-28 10:51:18.451500000 -0500
+@@ -19,7 +19,7 @@ noinst_HEADERS = fileformat.h \
+ 
+ lib_LTLIBRARIES = libpx.la
+ 
+-libpx_la_LDFLAGS = -version-info @PXLIB_VERSION_INFO@
++libpx_la_LDFLAGS = -version-info @PXLIB_VERSION_INFO@ -no-undefined
+ 
+ libpx_la_SOURCES = \
+ 		paradox.c \
