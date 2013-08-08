@@ -1,0 +1,25 @@
+inherit gnome2
+
+NAME="pxlib"
+VERSION=0.6.5
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Paradox database file library"
+DESCRIPTION="pxlib is shared C library to read various Paradox files.
+Currently .DB files are best supported. pxlib provides a very simple API to
+read the header and the data records of Paradox files. It also provides
+functions to convert the data into the hosts data format."
+HOMEPAGE="http://pxlib.sourceforge.net/"
+SRC_URI="mirror://sourceforge/pxlib/pxlib-${VERSION}.tar.gz"
+
+PATCH_URI="0.6.3-no-undefined.patch
+           0.6.3-pkg-config.patch
+           0.6.3-vpath.patch"
+
+PKG_NAMES="libpx0 libpx-devel"
+libpx0_CONTENTS="usr/bin/*-0.dll usr/share/"
+libpx_devel_CONTENTS='usr/include/ usr/lib/'
+
+DIFF_EXCLUDES="paradox-gsf.h paradox.h pxversion.h"
+
+CYGCONF_ARGS="--with-gsf=/usr"

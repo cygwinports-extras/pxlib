@@ -9,3 +9,12 @@
  
  libpx_la_SOURCES = \
  		paradox.c \
+@@ -33,7 +33,7 @@ libpx_la_SOURCES = \
+ 		px_crypt.c \
+ 		gregor.c
+ 
+-libpx_la_LIBADD = @RECODE_LIBS@ @GSF_LIBS@
++libpx_la_LIBADD = @RECODE_LIBS@ @GSF_LIBS@ @INTLLIBS@ @LTLIBICONV@
+ 
+ BUILD_LIBS = -lm
+ 
